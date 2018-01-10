@@ -22,6 +22,11 @@ class Link extends Component {
 
 }
 
+/*The function createFragmentContainer is a higher-order component that takes in two arguments:
+
+1.(Link) A React component for which you want to declare some data dependencies
+2.(info) Data dependencies written as a GraphQL fragment and wrapper using the graphql function*/
+
 export default createFragmentContainer(Link, graphql`
   fragment Link_link on Link {
     id
